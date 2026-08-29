@@ -1,0 +1,47 @@
+import Image from "next/image";
+import { images } from "@/lib/site";
+
+type LogoProps = {
+  className?: string;
+  priority?: boolean;
+  tone?: "light" | "dark";
+};
+
+export function Logo({
+  className = "",
+  priority = false,
+  tone = "dark",
+}: LogoProps) {
+  const light = tone === "light";
+
+  return (
+    <span className={`inline-flex items-center gap-2.5 sm:gap-3 ${className}`}>
+      <Image
+        src={images.emblem}
+        alt=""
+        width={256}
+        height={256}
+        className="h-10 w-10 shrink-0 object-contain sm:h-11 sm:w-11"
+        priority={priority}
+      />
+      <span className="flex min-w-0 flex-col leading-none">
+        <span
+          className={`font-display text-[1.65rem] tracking-wide sm:text-[1.85rem] ${
+            light
+              ? "text-cream drop-shadow-[0_2px_8px_rgba(0,0,0,0.45)]"
+              : "text-maroon"
+          }`}
+        >
+          Banjara
+        </span>
+        <span
+          className={`mt-1 text-[9px] font-medium uppercase tracking-[0.28em] sm:text-[10px] ${
+            light ? "text-gold-soft" : "text-gold"
+          }`}
+        >
+          Pure Veg · Sonari
+        </span>
+      </span>
+    </span>
+  );
+}
