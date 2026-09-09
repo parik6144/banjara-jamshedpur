@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { images } from "@/lib/site";
+import { images, site } from "@/lib/site";
 
 type LogoProps = {
   className?: string;
@@ -32,14 +32,14 @@ export function Logo({
               : "text-maroon"
           }`}
         >
-          Banjara
+          {site.outletName}
         </span>
         <span
           className={`mt-1 text-[9px] font-medium uppercase tracking-[0.28em] sm:text-[10px] ${
             light ? "text-gold-soft" : "text-gold"
           }`}
         >
-          Pure Veg · Sonari
+          {site.legalName}
         </span>
       </span>
     </span>

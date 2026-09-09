@@ -20,9 +20,10 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: site.title,
   description: site.description,
-  applicationName: "Banjara Sonari",
+  applicationName: site.name,
   keywords: [
     "Banjara",
+    "PB Venture",
     "Sonari",
     "Jamshedpur",
     "Indian restaurant",
@@ -39,7 +40,7 @@ export const metadata: Metadata = {
         url: "/images/sat-7809.jpg",
         width: 2400,
         height: 1600,
-        alt: "Dining room at Banjara, Sonari",
+        alt: "Dining room at Banjara, a PB Venture outlet in Sonari",
       },
     ],
   },
@@ -56,9 +57,14 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Restaurant",
-  name: "Banjara",
+  name: site.outletName,
   image: "/images/sat-7809.jpg",
   servesCuisine: "Indian",
+  parentOrganization: {
+    "@type": "Organization",
+    name: site.legalName,
+    legalName: site.legalName,
+  },
   address: {
     "@type": "PostalAddress",
     streetAddress: "Shop 18-19-20 G, Ground Floor, Bindal Mall, Marine Drive Road",

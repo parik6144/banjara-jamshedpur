@@ -1,4 +1,5 @@
 import { Reveal } from "./Reveal";
+import { site } from "@/lib/site";
 import { Motif } from "./Motif";
 
 const reasons = [
@@ -36,6 +37,10 @@ export function WhyBanjara() {
           <h2 className="font-display text-4xl leading-tight text-brown sm:text-5xl">
             Four reasons the evening stays with you
           </h2>
+          <p className="mt-4 max-w-md text-base leading-relaxed text-brown-soft">
+            {site.outletName} is the dining outlet of {site.legalName} —
+            hospitality, setting and flavour in one evening.
+          </p>
         </Reveal>
 
         <div className="grid gap-px bg-gold/30 sm:grid-cols-2">

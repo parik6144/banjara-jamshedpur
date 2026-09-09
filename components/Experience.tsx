@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { images } from "@/lib/site";
+import { images, site } from "@/lib/site";
 import { Button } from "./Button";
 import { ImageReveal, Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
@@ -32,9 +32,14 @@ export function Experience() {
             title="More Than a Meal. An Indian Celebration."
           />
           <p className="mt-6 max-w-md text-base leading-relaxed text-brown-soft sm:text-lg">
-            Banjara brings together vibrant Indian décor, warm hospitality,
-            traditional influences and a memorable dining atmosphere under one
-            roof.
+            {site.outletName} is the dining outlet of {site.legalName} in{" "}
+            {site.place}, Jamshedpur. The house brings together vibrant Indian
+            décor, warm hospitality, traditional influences and a memorable
+            dining atmosphere under one roof.
+          </p>
+          <p className="mt-4 max-w-md text-base leading-relaxed text-brown-soft sm:text-lg">
+            {site.legalName} is the name behind the experience. {site.outletName}{" "}
+            is where it is served — table by table, evening by evening.
           </p>
           <ul className="mt-8 space-y-3">
             {highlights.map((item) => (

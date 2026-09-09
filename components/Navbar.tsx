@@ -39,7 +39,7 @@ export function Navbar() {
         <Link
           href="#home"
           className="relative z-10 shrink-0"
-          aria-label="Banjara home"
+          aria-label={`${site.outletName} home`}
           onClick={() => setOpen(false)}
         >
           <Logo priority tone={scrolled || open ? "dark" : "light"} />

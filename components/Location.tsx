@@ -23,11 +23,15 @@ export function Location() {
       <div className="relative z-10 mx-auto flex min-h-[80svh] max-w-7xl items-center px-5 py-24 sm:px-8">
         <Reveal className="max-w-xl">
           <p className="mb-4 text-[11px] font-medium uppercase tracking-[0.32em] text-gold-soft">
-            Visit Banjara
+            Visit {site.outletName}
           </p>
-          <h2 className="mb-8 font-display text-4xl leading-tight text-cream sm:text-5xl">
+          <h2 className="mb-3 font-display text-4xl leading-tight text-cream sm:text-5xl">
             Your Royal Dining Experience Awaits
           </h2>
+          <p className="mb-8 text-sm leading-relaxed text-cream/80 sm:text-base">
+            {site.outletName}, an outlet of {site.legalName} at Bindal Mall,
+            Sonari.
+          </p>
 
           <address className="mb-8 not-italic text-cream/90">
             <p className="max-w-md text-base leading-relaxed sm:text-lg">

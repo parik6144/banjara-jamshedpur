@@ -1,3 +1,4 @@
+import { site } from "@/lib/site";
 import { Motif } from "./Motif";
 import { Reveal } from "./Reveal";
 
@@ -13,6 +14,9 @@ export function BrandStatement() {
         <blockquote className="font-display text-3xl italic leading-snug text-cream sm:text-4xl md:text-5xl">
           “Taste the tradition. Feel the grandeur.”
         </blockquote>
+        <p className="mt-6 text-[11px] font-medium uppercase tracking-[0.32em] text-gold-soft">
+          {site.outletName} · An outlet of {site.legalName}
+        </p>
         <span className="mx-auto mt-8 block h-px w-16 bg-gold/70" />
       </Reveal>
     </section>

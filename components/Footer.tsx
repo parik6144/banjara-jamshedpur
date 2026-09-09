@@ -10,7 +10,8 @@ export function Footer() {
         <div>
           <Logo tone="light" />
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-cream/70">
-            A royal Indian dining experience in Sonari, Jamshedpur.
+            {site.outletName} is the dining outlet of {site.legalName} — a royal
+            Indian experience in {site.place}, Jamshedpur.
           </p>
         </div>
 
@@ -51,7 +52,7 @@ export function Footer() {
       <Ornament className="pb-8 opacity-80" />
 
       <p className="border-t border-cream/10 px-5 py-6 text-center text-[11px] uppercase tracking-[0.2em] text-cream/50">
-        © Banjara, Sonari
+        © {site.legalName} · {site.outletName}, {site.place}
       </p>
     </footer>
   );
