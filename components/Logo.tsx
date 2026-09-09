@@ -35,11 +35,11 @@ export function Logo({
           {site.outletName}
         </span>
         <span
-          className={`mt-1 text-[9px] font-medium uppercase tracking-[0.28em] sm:text-[10px] ${
+          className={`mt-1 text-[9px] font-medium tracking-[0.12em] sm:text-[10px] sm:tracking-[0.16em] ${
             light ? "text-gold-soft" : "text-gold"
           }`}
         >
-          {site.legalName}
+          powered by {site.legalName}
         </span>
       </span>
     </span>

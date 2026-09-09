@@ -7,6 +7,7 @@ export const site = {
   title: "Banjara | PB Venture | Royal Indian Dining in Jamshedpur",
   description:
     "Banjara is the dining outlet of PB Venture in Sonari, Jamshedpur — Indian hospitality, vibrant ambience and memorable dining.",
+  attribution: "Banjara, powered by PB Venture",
   phoneDisplay: "+91 75458 00700",
   phoneHref: "tel:+917545800700",
   hours: "12:00 PM – 11:00 PM",

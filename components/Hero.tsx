@@ -32,8 +32,8 @@ export function Hero() {
 
       <div className="relative z-10 mx-auto flex min-h-[100svh] max-w-7xl flex-col justify-end px-5 pb-16 pt-28 sm:px-8 sm:pb-20 lg:justify-center lg:pb-24 lg:pt-32">
         <div className="hero-animate max-w-xl">
-          <p className="mb-4 text-[11px] font-medium uppercase tracking-[0.34em] text-gold-soft">
-            {site.place} · An outlet of {site.legalName}
+          <p className="mb-5 text-[11px] font-medium uppercase tracking-[0.22em] text-gold-soft">
+            {site.attribution}
           </p>
 
           <h1 className="mb-5 font-display text-[2.35rem] leading-[1.12] text-cream sm:text-5xl lg:text-[3.6rem]">

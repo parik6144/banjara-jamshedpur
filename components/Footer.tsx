@@ -51,8 +51,8 @@ export function Footer() {
 
       <Ornament className="pb-8 opacity-80" />
 
-      <p className="border-t border-cream/10 px-5 py-6 text-center text-[11px] uppercase tracking-[0.2em] text-cream/50">
-        © {site.legalName} · {site.outletName}, {site.place}
+      <p className="border-t border-cream/10 px-5 py-6 text-center text-sm text-cream/60">
+        © {site.attribution}
       </p>
     </footer>
   );
